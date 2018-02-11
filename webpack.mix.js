@@ -26,3 +26,7 @@ mix
   .copy("node_modules/font-awesome/fonts", "public/fonts")
   .copy("resources/assets/images", "public/images");
 require("dotenv").config();
+
+mix.options({
+  extractVueStyles: "public/css/vue-style.css"
+});
